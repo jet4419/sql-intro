@@ -23,9 +23,9 @@ $user = $statement->fetch();
 	<title>Document</title>
 </head>
 <body>
-		<p>First Name: <?= $user['first_name'] ?></p>
-		<p>Last Name: <?= $user['last_name'] ?></p>
-		<p>Age: <?= $user['age'] ?></p>
-		<p>Address: <?= $user['address'] ?></p>
+		<p><strong>First Name:</strong> <?= $user['first_name'] ?></p>
+		<p><strong>Last Name:</strong> <?= $user['last_name'] ?></p>
+		<p><strong>Age:</strong> <?= $user['age'] ?></p>
+		<p><strong>Address:</strong> <?= $user['address'] ?></p>
 </body>
 </html>
