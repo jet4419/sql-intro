@@ -40,9 +40,13 @@ $users = $statement->fetchAll();
 	</table> -->
 		<?php
 			foreach ($users as $user) {
+				echo "<ul>";
+				echo "<li>";
 				echo "<a href='user.php?id={$user['id']}'>";
 				echo "<p>{$user['first_name']}, {$user['last_name']}, {$user['age']}, {$user['address']}";
+				echo "</li>";
 				echo "</a>";
+				echo "</ul>";
 			}
 		?>
 		<br>
