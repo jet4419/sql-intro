@@ -18,14 +18,15 @@ $users = $statement->fetchAll();
 	<title>Document</title>
 </head>
 <body>
-	<table>
+	<!-- <table>
 		<tr>
 			<th>First Name</th>
 			<th>Last Name</th>
 			<th>Age</th>
 			<th>Address</th>
 		</tr>
-			<?php 
+		<?php 
+		/*
 				foreach ($users as $user) {
 					echo '<tr>';
 					echo "<td>{$user['first_name']}</td>";
@@ -34,7 +35,18 @@ $users = $statement->fetchAll();
 					echo "<td>{$user['address']}</td>";
 					echo '</tr>';
 				}
+				*/
 			?>
-	</table>
+	</table> -->
+		<?php
+			foreach ($users as $user) {
+				echo "<a href='user.php?id={$user['id']}'>";
+				echo "<p>{$user['first_name']}, {$user['last_name']}, {$user['age']}, {$user['address']}";
+				echo "</a>";
+			}
+		?>
+		<br>
+		<br>
+		<a href="create.php">Create New User</a>
 </body>
 </html>
