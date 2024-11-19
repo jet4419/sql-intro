@@ -1,0 +1,32 @@
+/* select all element * means all */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: flex;
+	background-color: #758694;
+	justify-content: space-between;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+ul li {
+	padding: 10px;
+}
+
+/* Selecting the anchor tag */
+/* You can use id or class selector */
+a {
+	text-decoration: none;
+	color: black;
+}
+
