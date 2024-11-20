@@ -22,6 +22,24 @@
 		</ul>
 	</nav>
 </header>
+<main>
+	<a href="#">Sample Link</a>
+	<div>
+		<p>Child 1</p>
+		<p>Child 2</p>
+		<p>Child 3</p>
+	</div>
+	<p>Sibling 1</p>
+	<section></section>
+	<section>
+		<p>Sibling 2</p>
+	</section>
+	<section></section>
+</main>
+
+<footer>
+
+</footer>
 	
 </body>
 </html>
